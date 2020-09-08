@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style the header */
+.header-img {
+  background-image: url(img/background2.jpg);
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-logo img {
+  text-align: center;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(29, 3, 3);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(182, 101, 26);
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: none;
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  padding: 15px;
+}
+.column-head {
+  float: none;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  float: none;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 250%;
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.column3-head {
+  float: none;
+  margin: auto;
+  text-align: center;
+  font-size: 150%;
+}
+.meny-art {
+  text-align: left;
+  font-size: 110%;
+  font-weight: 500;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 150%;
+  padding: 0;
+  margin: 10px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 100%;
+  }
+}
